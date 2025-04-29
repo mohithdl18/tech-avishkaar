@@ -1,7 +1,46 @@
 
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 
 const HeroSection = () => {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  // Set the hackathon date - May 15, 2025
+  const hackathonDate = new Date("2025-05-15T00:00:00").getTime();
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = hackathonDate - now;
+      
+      if (distance < 0) {
+        // Hackathon has started
+        clearInterval(timer);
+        setTimeLeft({
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0
+        });
+        return;
+      }
+
+      setTimeLeft({
+        days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((distance % (1000 * 60)) / 1000)
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [hackathonDate]);
+
   return (
     <div className="relative min-h-screen hero-gradient flex flex-col items-center justify-center overflow-hidden">
       {/* Background decorative elements */}
@@ -38,14 +77,28 @@ const HeroSection = () => {
           <div className="mt-12 flex items-center justify-center">
             <div className="animate-float">
               <div className="text-xs font-medium uppercase tracking-wider mb-2 text-gray-500">
-                Registration Closes
+                Hackathon Starts In
               </div>
-              <div className="bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg shadow-lg">
-                <span className="text-2xl font-mono font-bold">23</span>
-                <span className="mx-2">:</span>
-                <span className="text-2xl font-mono font-bold">14</span>
-                <span className="mx-2">:</span>
-                <span className="text-2xl font-mono font-bold">56</span>
+              <div className="bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg shadow-lg flex gap-4">
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl font-mono font-bold">{String(timeLeft.days).padStart(2, '0')}</span>
+                  <span className="text-xs text-gray-500">DAYS</span>
+                </div>
+                <span className="text-2xl font-mono font-bold self-start">:</span>
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl font-mono font-bold">{String(timeLeft.hours).padStart(2, '0')}</span>
+                  <span className="text-xs text-gray-500">HOURS</span>
+                </div>
+                <span className="text-2xl font-mono font-bold self-start">:</span>
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl font-mono font-bold">{String(timeLeft.minutes).padStart(2, '0')}</span>
+                  <span className="text-xs text-gray-500">MIN</span>
+                </div>
+                <span className="text-2xl font-mono font-bold self-start">:</span>
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl font-mono font-bold">{String(timeLeft.seconds).padStart(2, '0')}</span>
+                  <span className="text-xs text-gray-500">SEC</span>
+                </div>
               </div>
             </div>
           </div>
