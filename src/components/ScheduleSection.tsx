@@ -83,43 +83,7 @@ const timelineEvents = {
       description: "Learn best practices for user experience"
     }
   ],
-  day3: [
-    {
-      time: "8:00 AM",
-      title: "Breakfast",
-      description: "Last day fuel-up"
-    },
-    {
-      time: "11:00 AM",
-      title: "Hacking Ends",
-      description: "Pencils down! Time to finalize your projects"
-    },
-    {
-      time: "12:00 PM",
-      title: "Lunch",
-      description: "Last meal before presentations"
-    },
-    {
-      time: "1:00 PM",
-      title: "Project Presentations",
-      description: "Teams present their projects to judges"
-    },
-    {
-      time: "4:00 PM",
-      title: "Judging Period",
-      description: "Judges deliberate and select winners"
-    },
-    {
-      time: "5:00 PM",
-      title: "Closing Ceremony",
-      description: "Award announcement and celebration"
-    },
-    {
-      time: "6:00 PM",
-      title: "Networking Reception",
-      description: "Celebrate your accomplishments with fellow hackers"
-    }
-  ]
+  
 };
 
 const ScheduleSection = () => {
@@ -137,10 +101,9 @@ const ScheduleSection = () => {
 
         <div className="max-w-4xl mx-auto">
           <Tabs defaultValue="day1" className="w-full" onValueChange={(value) => setActiveDay(value)}>
-            <TabsList className="grid grid-cols-3 mb-8">
+            <TabsList className="grid grid-cols-2 mb-8">
               <TabsTrigger value="day1">Day 1 - May 15</TabsTrigger>
               <TabsTrigger value="day2">Day 2 - May 16</TabsTrigger>
-              <TabsTrigger value="day3">Day 3 - May 17</TabsTrigger>
             </TabsList>
             
             {Object.keys(timelineEvents).map((day) => (

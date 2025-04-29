@@ -53,16 +53,19 @@ const HeroSection = () => {
         <div className="max-w-3xl mx-auto">
           <div className="mb-6 inline-block p-2 bg-white/10 backdrop-blur-sm rounded-full">
             <p className="text-sm font-medium px-3 py-1">
-              <span className="gradient-text font-semibold">May 15-17, 2025</span> • San Francisco & Virtual
+              <span className="gradient-text font-semibold">May 15-16, 2025</span> • ATME College of Engineering
+            </p>
+            <p className="text-sm font-medium px-3 py-1">
+            In Collaboration with •  <span className="gradient-text font-semibold">IEEE and IET</span>
             </p>
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Hack<span className="gradient-text">Fusion</span> 2025
+            Tech<span className="gradient-text">Avishkar</span> 2.0
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-gray-700">
-            Where innovation meets collaboration. Join 1000+ developers, designers, and entrepreneurs for a 48-hour coding marathon.
+            Where innovation meets collaboration. Join 100+ developers, designers, and entrepreneurs for a 24-hour coding marathon.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

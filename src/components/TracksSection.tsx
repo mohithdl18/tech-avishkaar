@@ -40,7 +40,7 @@ const TracksSection = () => {
     },
     {
       id: 2,
-      title: "Web3 & Blockchain",
+      title: "Internet of Things",
       description: "Create decentralized applications, smart contracts, or blockchain-based solutions.",
       icon: "⛓️",
       color: "from-blue-500 to-cyan-600",
@@ -57,7 +57,7 @@ const TracksSection = () => {
     },
     {
       id: 3,
-      title: "Climate Tech",
+      title: "Special Statements",
       description: "Develop sustainable solutions addressing environmental challenges and climate change.",
       icon: "🌍",
       color: "from-green-500 to-emerald-600",
@@ -74,23 +74,6 @@ const TracksSection = () => {
     },
     {
       id: 4,
-      title: "Health & Wellness",
-      description: "Build applications that improve health outcomes, patient care, or wellness tracking.",
-      icon: "🏥",
-      color: "from-red-400 to-rose-600",
-      problemStatements: [
-        {
-          title: "Mental Health Support Network",
-          description: "Design a platform that provides personalized mental health resources, connects users with appropriate support groups, and offers tools for tracking emotional wellbeing while maintaining user privacy and security."
-        },
-        {
-          title: "Preventive Health Assistant",
-          description: "Develop an application that helps users maintain preventive health practices through personalized recommendations, reminders for screenings, and integration with healthcare providers."
-        }
-      ]
-    },
-    {
-      id: 5,
       title: "Open Innovation",
       description: "Create any innovative solution that doesn't fit within the other tracks.",
       icon: "💡",
@@ -141,7 +124,7 @@ const TracksSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {tracks.map((track) => (
             <div key={track.id} className="flex flex-col">
               <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow flex-grow">
