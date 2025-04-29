@@ -2,10 +2,23 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Book, BookOpen } from "lucide-react";
+import { Book, BookOpen, Maximize } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogClose,
+} from "@/components/ui/dialog";
 
 const TracksSection = () => {
   const [activeTrackId, setActiveTrackId] = useState<number | null>(null);
+  const [selectedProblem, setSelectedProblem] = useState<{
+    title: string;
+    description: string;
+    trackTitle: string;
+    trackColor: string;
+  } | null>(null);
 
   const tracks = [
     {
@@ -103,48 +116,88 @@ const TracksSection = () => {
     }
   };
 
+  const openProblemDetail = (
+    problem: { title: string; description: string },
+    trackTitle: string,
+    trackColor: string
+  ) => {
+    setSelectedProblem({
+      ...problem,
+      trackTitle,
+      trackColor,
+    });
+  };
+
   return (
     <section id="tracks" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Hackathon <span className="gradient-text">Tracks</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Hackathon <span className="gradient-text">Tracks</span>
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Choose one of our exciting themes to focus your project on, or go wild with the open innovation track!
+            Choose one of our exciting themes to focus your project on, or go
+            wild with the open innovation track!
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {tracks.map(track => (
+          {tracks.map((track) => (
             <div key={track.id} className="flex flex-col">
               <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow flex-grow">
-                <div className={`h-2 bg-gradient-to-r ${track.color}`}></div>
+                <div
+                  className={`h-2 bg-gradient-to-r ${track.color}`}
+                ></div>
                 <CardContent className="p-6">
                   <div className="text-4xl mb-4">{track.icon}</div>
                   <h3 className="text-xl font-bold mb-2">{track.title}</h3>
                   <p className="text-gray-600 mb-4">{track.description}</p>
-                  <Button 
-                    onClick={() => toggleTrackDetails(track.id)} 
-                    variant="outline" 
+                  <Button
+                    onClick={() => toggleTrackDetails(track.id)}
+                    variant="outline"
                     className="mt-2 w-full"
                   >
                     {activeTrackId === track.id ? (
-                      <><BookOpen className="mr-2" /> Hide Problem Statements</>
+                      <>
+                        <BookOpen className="mr-2" /> Hide Problem Statements
+                      </>
                     ) : (
-                      <><Book className="mr-2" /> View Problem Statements</>
+                      <>
+                        <Book className="mr-2" /> View Problem Statements
+                      </>
                     )}
                   </Button>
                 </CardContent>
               </Card>
-              
+
               {activeTrackId === track.id && (
                 <Card className="mt-4 border border-dashed border-primary/50 bg-primary/5">
                   <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-4">Problem Statements</h4>
+                    <h4 className="font-bold text-lg mb-4">
+                      Problem Statements
+                    </h4>
                     <div className="space-y-6">
                       {track.problemStatements.map((problem, index) => (
-                        <div key={index} className="rounded-lg bg-white p-4 shadow">
-                          <h5 className="font-semibold mb-2">{problem.title}</h5>
-                          <p className="text-gray-700">{problem.description}</p>
+                        <div
+                          key={index}
+                          className="rounded-lg bg-white p-4 shadow group cursor-pointer hover:shadow-md transition-all"
+                          onClick={() =>
+                            openProblemDetail(
+                              problem,
+                              track.title,
+                              track.color
+                            )
+                          }
+                        >
+                          <div className="flex justify-between items-center">
+                            <h5 className="font-semibold mb-2">
+                              {problem.title}
+                            </h5>
+                            <Maximize className="h-4 w-4 text-gray-400 group-hover:text-primary transition-colors" />
+                          </div>
+                          <p className="text-gray-700 line-clamp-2">
+                            {problem.description}
+                          </p>
                         </div>
                       ))}
                     </div>
@@ -154,13 +207,52 @@ const TracksSection = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="mt-12 text-center">
           <p className="text-gray-600 italic">
-            Projects will be judged on creativity, technical complexity, design, and relevance to the chosen track.
+            Projects will be judged on creativity, technical complexity, design,
+            and relevance to the chosen track.
           </p>
         </div>
       </div>
+
+      {/* Full-screen dialog for problem statement details */}
+      <Dialog
+        open={selectedProblem !== null}
+        onOpenChange={(open) => {
+          if (!open) setSelectedProblem(null);
+        }}
+      >
+        <DialogContent className="max-w-4xl w-11/12 sm:w-4/5 max-h-[90vh] overflow-y-auto">
+          {selectedProblem && (
+            <>
+              <DialogHeader>
+                <div
+                  className={`h-2 bg-gradient-to-r ${selectedProblem.trackColor} mb-4 -mt-2 -mx-6 sm:rounded-t-lg`}
+                ></div>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
+                    {selectedProblem.trackTitle}
+                  </span>
+                </div>
+                <DialogTitle className="text-2xl">
+                  {selectedProblem.title}
+                </DialogTitle>
+              </DialogHeader>
+              <div className="mt-4">
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  {selectedProblem.description}
+                </p>
+              </div>
+              <div className="mt-8 flex justify-end">
+                <DialogClose asChild>
+                  <Button className="gradient-bg">Got it</Button>
+                </DialogClose>
+              </div>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
