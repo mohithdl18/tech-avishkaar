@@ -223,30 +223,30 @@ const TracksSection = () => {
           if (!open) setSelectedProblem(null);
         }}
       >
-        <DialogContent className="max-w-4xl w-11/12 sm:w-4/5 max-h-[90vh] overflow-y-auto">
+        <DialogContent fullScreen className="flex flex-col">
           {selectedProblem && (
             <>
               <DialogHeader>
                 <div
-                  className={`h-2 bg-gradient-to-r ${selectedProblem.trackColor} mb-4 -mt-2 -mx-6 sm:rounded-t-lg`}
+                  className={`h-2 bg-gradient-to-r ${selectedProblem.trackColor} -mt-6 -mx-6`}
                 ></div>
-                <div className="flex items-center gap-2 mb-2">
+                <div className="flex items-center gap-2 mb-2 mt-4">
                   <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
                     {selectedProblem.trackTitle}
                   </span>
                 </div>
-                <DialogTitle className="text-2xl">
+                <DialogTitle className="text-3xl md:text-4xl">
                   {selectedProblem.title}
                 </DialogTitle>
               </DialogHeader>
-              <div className="mt-4">
-                <p className="text-gray-700 text-lg leading-relaxed">
+              <div className="mt-8 flex-grow overflow-y-auto">
+                <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl">
                   {selectedProblem.description}
                 </p>
               </div>
-              <div className="mt-8 flex justify-end">
+              <div className="mt-8 flex justify-center md:justify-end">
                 <DialogClose asChild>
-                  <Button className="gradient-bg">Got it</Button>
+                  <Button size="lg" className="gradient-bg">Got it</Button>
                 </DialogClose>
               </div>
             </>
