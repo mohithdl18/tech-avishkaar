@@ -4,10 +4,13 @@ import { Lightbulb, Users, Award, Code } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-20 section-gradient relative">
+      {/* Grid background */}
+      <div className="absolute inset-0 grid-bg"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About <span className="gradient-text">TechAvishkaar</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#150029]">About <span className="gradient-text">TechAvishkaar</span></h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A
             24-hour national-level hackathon
@@ -18,18 +21,18 @@ const AboutSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          <div>
+          <div className="glassy-card p-8 rounded-lg">
             <h3 className="text-2xl font-bold mb-6 text-[#150029]">What is TechAvishkaar?</h3>
             <p className="text-gray-700 mb-4">
-            TechAvishkaar is a premier 24-hour hackathon that challenges participants to build innovative solutions to real-world problems. Whether you're a seasoned developer or just starting out, HackFusion offers an inclusive environment for learning, collaboration, and growth.
+              TechAvishkaar is a premier 24-hour hackathon that challenges participants to build innovative solutions to real-world problems. Whether you're a seasoned developer or just starting out, TechAvishkaar offers an inclusive environment for learning, collaboration, and growth.
             </p>
             <p className="text-gray-700 mb-4">
-              With amazing prizes, mentorship opportunities, and networking events, HackFusion is more than just a coding competition—it's a community celebration of technology and creativity.
+              With amazing prizes, mentorship opportunities, and networking events, TechAvishkaar is more than just a coding competition—it's a community celebration of technology and creativity.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Card className="border-2 border-[#150029]/10 hover:border-[#150029]/30 transition-colors p-2">
+            <Card className="glassy-card border-2 border-[#150029]/10 hover:border-[#150029]/30 transition-colors p-2">
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <div className="w-12 h-12 rounded-full bg-[#150029] flex items-center justify-center mb-4">
                   <Lightbulb className="text-white h-6 w-6" />
@@ -39,7 +42,7 @@ const AboutSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-[#150029]/10 hover:border-[#150029]/30 transition-colors p-2">
+            <Card className="glassy-card border-2 border-[#150029]/10 hover:border-[#150029]/30 transition-colors p-2">
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <div className="w-12 h-12 rounded-full bg-[#150029] flex items-center justify-center mb-4">
                   <Users className="text-white h-6 w-6" />
@@ -49,7 +52,7 @@ const AboutSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-[#150029]/10 hover:border-[#150029]/30 transition-colors p-2">
+            <Card className="glassy-card border-2 border-[#150029]/10 hover:border-[#150029]/30 transition-colors p-2">
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <div className="w-12 h-12 rounded-full bg-[#150029] flex items-center justify-center mb-4">
                   <Code className="text-white h-6 w-6" />
@@ -59,7 +62,7 @@ const AboutSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-[#150029]/10 hover:border-[#150029]/30 transition-colors p-2">
+            <Card className="glassy-card border-2 border-[#150029]/10 hover:border-[#150029]/30 transition-colors p-2">
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <div className="w-12 h-12 rounded-full bg-[#150029] flex items-center justify-center mb-4">
                   <Award className="text-white h-6 w-6" />
