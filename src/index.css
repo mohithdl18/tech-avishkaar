@@ -48,21 +48,21 @@
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-[#150029] to-secondary bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#3c0075] to-secondary bg-clip-text text-transparent;
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-r from-[#150029] to-secondary;
+    @apply bg-gradient-to-r from-[#3c0075] to-secondary;
   }
   
   .hero-gradient {
-    @apply bg-gradient-to-b from-[#150029]/20 via-indigo-400/10 to-transparent;
+    @apply bg-gradient-to-b from-[#3c0075]/20 via-indigo-400/10 to-transparent;
   }
 
   /* New grid and gradient styles */
   .grid-bg {
     background-color: #ffffff;
-    background-image: linear-gradient(#150029 1.5px, transparent 1.5px), linear-gradient(to right, #150029 1.5px, transparent 1.5px);
+    background-image: linear-gradient(#3c0075 1.5px, transparent 1.5px), linear-gradient(to right, #3c0075 1.5px, transparent 1.5px);
     background-size: 50px 50px;
     background-position: center;
     opacity: 0.03;

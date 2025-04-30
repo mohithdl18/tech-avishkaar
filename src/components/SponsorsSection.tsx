@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const SponsorsSection = () => {
   // These would be actual logos in a real implementation
@@ -94,7 +95,7 @@ const SponsorsSection = () => {
             Interested in sponsoring HackFusion? Connect with top talent, showcase your technology, and support the developer community.
           </p>
           <Button className="gradient-bg">
-            Get Sponsorship Info
+            <Link to='/sponsorship'>Get Sponsorship Info</Link>
           </Button>
         </div>
       </div>

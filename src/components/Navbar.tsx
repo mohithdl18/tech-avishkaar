@@ -30,12 +30,13 @@ const Navbar = () => {
 
   return (
     <nav 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-md shadow-md" : "bg-transparent"
-      }`}
-    >
+  className={`fixed top-5 left-1/2 transform -translate-x-1/2 z-50 w-11/12 md:w-3/4 rounded-2xl transition-all duration-300 ${
+    isScrolled ? "bg-white/50 backdrop-blur-md shadow-md" : "bg-transparent"
+  }`}
+>
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <Logo />
@@ -51,7 +52,7 @@ const Navbar = () => {
               <a href="#prizes" className="text-[#150029] hover:text-secondary px-3 py-2 rounded-md text-sm font-medium">Prizes</a>
               <a href="#sponsors" className="text-[#150029] hover:text-secondary px-3 py-2 rounded-md text-sm font-medium">Sponsors</a>
               <a href="#faq" className="text-[#150029] hover:text-secondary px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
-              <Link to="/sponsorship" className="text-[#150029] hover:text-secondary px-3 py-2 rounded-md text-sm font-medium">Sponsor Us</Link>
+              {/* <Link to="/sponsorship" className="text-[#150029] hover:text-secondary px-3 py-2 rounded-md text-sm font-medium">Sponsor Us</Link> */}
               <Button asChild className="gradient-bg">
                 <a href="#register">Register Now</a>
               </Button>
