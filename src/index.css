@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 250 47% 60%;
+    --primary: 263 100% 8%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 217 71% 53%;
@@ -31,7 +31,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 263 100% 8%;
 
     --radius: 0.5rem;
   }
@@ -48,14 +48,14 @@
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#150029] to-secondary bg-clip-text text-transparent;
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-r from-primary to-secondary;
+    @apply bg-gradient-to-r from-[#150029] to-secondary;
   }
   
   .hero-gradient {
-    @apply bg-gradient-to-b from-violet-600/20 via-indigo-400/10 to-transparent;
+    @apply bg-gradient-to-b from-[#150029]/20 via-indigo-400/10 to-transparent;
   }
 }
