@@ -57,10 +57,10 @@ const RegisterSection = () => {
                 <div className="flex flex-col items-center justify-center space-y-6 text-center">
                   <div className="mb-2">
                     <h4 className="font-bold mb-1 text-lg text-[#150029]">Registration Deadline</h4>
-                    <p className="text-gray-600">April 30, 2025 or until spots are filled</p>
+                    <p className="text-gray-600">May 10, 2025 or until spots are filled</p>
                   </div>
                   <Button size="lg" className="gradient-bg w-full text-lg py-7" asChild>
-                    <a href="https://forms.example.com/register" target="_blank" rel="noopener noreferrer">
+                    <a href="https://tally.so/r/3ygjYd" target="_blank" rel="noopener noreferrer">
                       Register Now <ArrowRight className="ml-2" size={18} />
                     </a>
                   </Button>

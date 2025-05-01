@@ -36,7 +36,7 @@ const SponsorsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our <span className="gradient-text">Sponsors</span></h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            HackFusion wouldn't be possible without the generous support of our sponsors.
+            TechAvishkar wouldn't be possible without the generous support of our sponsors.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ const SponsorsSection = () => {
         </div>
 
         {/* Sponsor CTA */}
-        <div className="mt-12 text-center max-w-2xl mx-auto">
+        {/* <div className="mt-12 text-center max-w-2xl mx-auto">
           <h3 className="text-2xl font-bold mb-4">Become a Sponsor</h3>
           <p className="text-gray-600 mb-6">
             Interested in sponsoring HackFusion? Connect with top talent, showcase your technology, and support the developer community.
@@ -97,7 +97,7 @@ const SponsorsSection = () => {
           <Button className="gradient-bg">
             <Link to='/sponsorship'>Get Sponsorship Info</Link>
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

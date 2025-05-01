@@ -7,44 +7,44 @@ const PrizesSection = () => {
     {
       id: "grand",
       title: "Grand Prize",
-      amount: "$10,000",
-      description: "The overall winning team across all tracks",
+      amount: "₹7,000",
+      description: "The winning team across each tracks [AI/ML, IOT, Open Innovation]",
       icon: <Trophy className="h-12 w-12 text-yellow-500" />,
       color: "border-yellow-400 bg-yellow-50"
     },
     {
       id: "second",
       title: "Second Place",
-      amount: "$5,000",
-      description: "The runner-up team across all tracks",
+      amount: "₹5,000",
+      description: "The runner-up team across each tracks [AI/ML, IOT, Open Innovation]",
       icon: <Medal className="h-12 w-12 text-gray-400" />,
       color: "border-gray-300 bg-gray-50"
     },
     {
       id: "third",
-      title: "Third Place",
-      amount: "$2,500",
-      description: "The third-place team across all tracks",
+      title: "Special Domain [Winner]",
+      amount: "Internship Opportunity",
+      description: "The winning team of [Special domain] gets an intership opportunity",
       icon: <Medal className="h-12 w-12 text-amber-700" />,
       color: "border-amber-600 bg-amber-50"
     }
   ];
 
-  const trackPrizes = [
-    "Best AI & Machine Learning Project - $2,000",
-    "Best Web3 & Blockchain Project - $2,000",
-    "Best Climate Tech Solution - $2,000",
-    "Best Health & Wellness Application - $2,000",
-    "Best Open Innovation Project - $2,000"
-  ];
+  // const trackPrizes = [
+  //   "Best AI & Machine Learning Project - $2,000",
+  //   "Best Web3 & Blockchain Project - $2,000",
+  //   "Best Climate Tech Solution - $2,000",
+  //   "Best Health & Wellness Application - $2,000",
+  //   "Best Open Innovation Project - $2,000"
+  // ];
 
-  const specialPrizes = [
-    "Best User Experience - $1,000",
-    "Best Technical Implementation - $1,000",
-    "Most Innovative Solution - $1,000",
-    "Best First-Time Hackathon Team - $1,000",
-    "People's Choice Award - $1,000"
-  ];
+  // const specialPrizes = [
+  //   "Best User Experience - $1,000",
+  //   "Best Technical Implementation - $1,000",
+  //   "Most Innovative Solution - $1,000",
+  //   "Best First-Time Hackathon Team - $1,000",
+  //   "People's Choice Award - $1,000"
+  // ];
 
   return (
     <section id="prizes" className="py-20 bg-white">
@@ -52,7 +52,7 @@ const PrizesSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Amazing <span className="gradient-text">Prizes</span></h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Over $50,000 in cash and prizes to be won at HackFusion 2025!
+            Over ₹30,000+ in cash and prizes to be won at TechAvishkar 2.0!
           </p>
         </div>
         
@@ -69,7 +69,7 @@ const PrizesSection = () => {
           ))}
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
               <Award className="h-6 w-6" />
@@ -99,13 +99,12 @@ const PrizesSection = () => {
               ))}
             </ul>
           </div>
-        </div>
+        </div> */}
         
         <div className="mt-16 p-6 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg text-center">
           <h3 className="text-xl font-bold mb-2">Additional Perks</h3>
           <p>
-            All participants will receive exclusive swag, interview opportunities with our sponsors, and 
-            free credits for various developer tools and platforms.
+            All participants will receive exclusive swag, and participation certificates.
           </p>
         </div>
       </div>

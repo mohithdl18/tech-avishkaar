@@ -29,36 +29,44 @@ const TracksSection = () => {
       color: "from-violet-500 to-purple-600",
       problemStatements: [
         {
-          title: "Healthcare Diagnosis Assistant",
-          description: "Develop an AI system that helps healthcare professionals diagnose common illnesses more accurately based on symptom input and patient history. The system should improve diagnostic accuracy and suggest potential treatment options."
+          title: "Climate Analytics & Forecasting",
+          description: "Build solutions using high-resolution weather models, carbon footprint estimation, and anomaly detection to analyze and predict climate patterns effectively."
         },
         {
-          title: "Sustainable Smart City Planner",
-          description: "Create an ML-powered platform that analyzes urban data to optimize city planning for sustainability, reducing energy consumption and traffic congestion while maximizing green spaces and public transportation efficiency."
+          title: "Smart Healthcare & Wellbeing",
+          description: "Develop solutions like early diagnostics, personalized treatment models, and mental health chatbots to enhance patient care and overall wellbeing."
+        },
+        {
+          title: "Cultural Apps & Gamification",
+          description: "Create engaging experiences through desi game recommendations and adaptive AR/VR storytelling that preserve and promote cultural heritage."
+        },
+        {
+          title: "Digital Inclusion & Financial Wellness",
+          description: "Create solutions like AI-based micro-credit scoring, budgeting robo-advisors, and fraud detection bots to enhance financial access and security for underserved communities."
         }
       ]
     },
     {
       id: 2,
       title: "Internet of Things",
-      description: "Create decentralized applications, smart contracts, or blockchain-based solutions.",
+      description: "Create smart solutions using connected devices and real-time sensors to automate and optimize.",
       icon: "⛓️",
       color: "from-blue-500 to-cyan-600",
       problemStatements: [
         {
-          title: "Transparent Supply Chain Tracker",
-          description: "Build a blockchain solution that enables consumers to verify the entire supply chain of products they purchase, ensuring ethical sourcing and manufacturing, while giving businesses tools to prove their sustainability claims."
+          title: "Air Quality & Geo-Hazard Monitoring",
+          description: "Develop a smart system that monitors air pollution and detects geo-hazards like landslides or earthquakes using real-time sensor data. The system should enable early warnings and support disaster risk management."
         },
         {
-          title: "Decentralized Identity Verification",
-          description: "Develop a system that allows users to own and control their digital identity across platforms without relying on centralized authorities, while maintaining privacy and compliance with verification requirements."
+          title: "Circular Economy & Waste Management",
+          description: "Design a solution that promotes recycling, reduces waste, and supports sustainable resource use through smart tracking, sorting, and reuse technologies."
         }
       ]
     },
     {
       id: 3,
       title: "Special Statements",
-      description: "Develop sustainable solutions addressing environmental challenges and climate change.",
+      description: "Develop unique solutions addressing niche problems or innovative use cases beyond standard categories.",
       icon: "🌍",
       color: "from-green-500 to-emerald-600",
       problemStatements: [

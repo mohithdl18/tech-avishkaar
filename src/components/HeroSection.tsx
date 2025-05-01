@@ -68,7 +68,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-[#150029]">
-            Where innovation meets collaboration. Join 100+ developers, designers, and entrepreneurs for a 24-hour coding marathon.
+          "Where ideas ignite and innovation never sleeps — join the 24-hour coding revolution!"
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -24,7 +24,10 @@ const AboutSection = () => {
           <div className="glassy-card p-8 rounded-lg">
             <h3 className="text-2xl font-bold mb-6 text-[#150029]">What is TechAvishkaar?</h3>
             <p className="text-gray-700 mb-4">
-              TechAvishkaar is a premier 24-hour hackathon that challenges participants to build innovative solutions to real-world problems. Whether you're a seasoned developer or just starting out, TechAvishkaar offers an inclusive environment for learning, collaboration, and growth.
+            Welcome to TechAvishkar 2.0 – Ignite. Innovate. Impact.
+TechAvishkar 2.0 is a premier 24-hour National Level Hackathon designed to push boundaries and spark innovation. Step into a high-energy arena where bright minds come together to craft tech-driven solutions to real-world challenges.
+Whether you're a seasoned developer or a passionate beginner, TechAvishkar fosters an inclusive space that thrives on collaboration, creativity, and continuous learning.
+With exciting prizes, hands-on mentorship,internship and unmatched networking opportunities, this isn’t just a coding competition — it's a celebration of technology, talent, and teamwork.
             </p>
             <p className="text-gray-700 mb-4">
               With amazing prizes, mentorship opportunities, and networking events, TechAvishkaar is more than just a coding competition—it's a community celebration of technology and creativity.
@@ -58,7 +61,7 @@ const AboutSection = () => {
                   <Code className="text-white h-6 w-6" />
                 </div>
                 <h4 className="font-bold text-lg mb-2 text-[#150029]">Learning</h4>
-                <p className="text-gray-600">Gain new skills and knowledge through workshops</p>
+                <p className="text-gray-600">Gain new skills and knowledge through mentorship</p>
               </CardContent>
             </Card>
 

@@ -6,82 +6,72 @@ import { Card, CardContent } from "@/components/ui/card";
 const timelineEvents = {
   day1: [
     {
-      time: "9:00 AM",
-      title: "Registration & Breakfast",
-      description: "Check-in, grab your welcome kit and enjoy breakfast"
+      time: "8:00 AM",
+      title: "Registration & Breakfast"
     },
     {
-      time: "10:00 AM",
-      title: "Opening Ceremony",
-      description: "Welcome address and introduction to HackFusion"
+      time: "9:30 AM",
+      title: "Opening Ceremony (Auditorium)"
+    },
+    {
+      time: "10:30 AM",
+      title: "Assembling in Civil Auditorium & Briefing"
     },
     {
       time: "11:00 AM",
-      title: "Team Formation",
-      description: "Find teammates or join an existing team"
+      title: "Hacking Begins"
     },
     {
-      time: "12:00 PM",
-      title: "Hacking Begins",
-      description: "Start building your amazing projects"
+      time: "11:30 AM",
+      title: "Phase 1 Evaluation"
     },
     {
       time: "1:00 PM",
-      title: "Lunch",
-      description: "Refuel with delicious food"
-    },
-    {
-      time: "3:00 PM",
-      title: "Workshop: AI Integration",
-      description: "Learn how to integrate AI into your projects"
-    },
-    {
-      time: "6:00 PM",
-      title: "Dinner",
-      description: "Time for some more delicious food"
+      title: "Lunch Break",
     },
     {
       time: "8:00 PM",
-      title: "Mentor Sessions",
-      description: "Get help from industry experts"
+      title: "Dinner"
+      // description: "Time for some more delicious food"
+    },
+    {
+      time: "9:30 PM",
+      title: "Phase 2 Evaluation"
+      // description: "Get help from industry experts"
     }
   ],
   day2: [
     {
+      time: "2:00 AM",
+      title: "Midnight Snacks"
+    },
+    {
       time: "8:00 AM",
-      title: "Breakfast",
-      description: "Start your day with a nutritious meal"
+      title: "Breakfast"
     },
     {
-      time: "10:00 AM",
-      title: "Workshop: Pitching Skills",
-      description: "Learn how to effectively present your project"
+      time: "9:30 AM",
+      title: "Phase 3 Evaluation"
     },
     {
-      time: "12:00 PM",
-      title: "Lunch",
-      description: "Midday break with great food"
+      time: "10:30 AM",
+      title: "Valedictory"
     },
-    {
-      time: "2:00 PM",
-      title: "Midway Demos",
-      description: "Share your progress and get feedback"
-    },
-    {
-      time: "4:00 PM",
-      title: "Energizer Activity",
-      description: "Fun team building exercise to re-energize"
-    },
-    {
-      time: "6:00 PM",
-      title: "Dinner",
-      description: "Enjoy a hearty dinner"
-    },
-    {
-      time: "8:00 PM",
-      title: "Workshop: UX Design",
-      description: "Learn best practices for user experience"
-    }
+    // {
+    //   time: "4:00 PM",
+    //   title: "Energizer Activity",
+    //   description: "Fun team building exercise to re-energize"
+    // },
+    // {
+    //   time: "6:00 PM",
+    //   title: "Dinner",
+    //   description: "Enjoy a hearty dinner"
+    // },
+    // {
+    //   time: "8:00 PM",
+    //   title: "Workshop: UX Design",
+    //   description: "Learn best practices for user experience"
+    // }
   ],
   
 };
@@ -95,7 +85,7 @@ const ScheduleSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Event <span className="gradient-text">Schedule</span></h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Three days packed with coding, learning, and fun activities.
+            Two days packed with coding, learning, and fun activities.
           </p>
         </div>
 
@@ -117,7 +107,7 @@ const ScheduleSection = () => {
                         </div>
                         <div className="p-4 md:w-3/4">
                           <h4 className="font-bold mb-1">{event.title}</h4>
-                          <p className="text-gray-600 text-sm">{event.description}</p>
+                          {/* <p className="text-gray-600 text-sm">{event.description}</p> */}
                         </div>
                       </div>
                     </CardContent>
