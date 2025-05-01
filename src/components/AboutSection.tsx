@@ -71,7 +71,7 @@ With exciting prizes, hands-on mentorship,internship and unmatched networking op
                   <Award className="text-white h-6 w-6" />
                 </div>
                 <h4 className="font-bold text-lg mb-2 text-[#150029]">Prizes</h4>
-                <p className="text-gray-600">Win amazing rewards valued at over $50,000</p>
+                <p className="text-gray-600">Win amazing rewards valued at over ₹30,000+</p>
               </CardContent>
             </Card>
           </div>

@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-6">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-32 mb-12">
           <div>
             <h3 className="text-xl font-bold mb-4">TechAvishkar</h3>
             <p className="text-gray-300 mb-4">
-              Where innovation meets collaboration. Join us for the most exciting hackathon experience.
+            Where ideas ignite and innovation never sleeps — join the 24-hour coding revolution!.
             </p>
             <div className="flex space-x-4">
               <a href="#" aria-label="Facebook" className="text-gray-300 hover:text-primary">
@@ -41,7 +41,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
+          {/* <div>
             <h3 className="text-lg font-bold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-300 hover:text-white">Code of Conduct</a></li>
@@ -50,20 +50,34 @@ const Footer = () => {
               <li><a href="#" className="text-gray-300 hover:text-white">Past Events</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Blog</a></li>
             </ul>
-          </div>
+          </div> */}
           
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-center">
                 <Mail size={16} className="mr-2" />
-                <a href="mailto:info@hackfusion.io" className="hover:text-white">info@hackfusion.io</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=techavishkar.2.o@gmail.com.com" className="hover:text-white">techavishkar.2.o@gmail.com</a>
               </li>
-              <li>San Francisco, CA</li>
-              <li>May 15-17, 2025</li>
+              <li>ATME College of Engineering, Mysuru</li>
+              <li>May 15-16, 2025</li>
             </ul>
           </div>
+
+          <div>
+            <h3 className="text-lg font-bold mb-4">Student Co-ordinators</h3>
+            <ul className="space-y-2">
+              <li><p className="text-gray-300 hover:text-white">Kushal S M - 72043 65752</p></li>
+              <li><p className="text-gray-300 hover:text-white">Hemanth Kumar - 88848 62170</p></li>
+              <li><p className="text-gray-300 hover:text-white">Mohith D L - 87624 89064</p></li>
+              <li><p className="text-gray-300 hover:text-white">Janya U Singh - 93533 37905</p></li>
+            </ul>
+          </div>
+          
+
         </div>
+
+        
         
         <div className="border-t border-gray-800 pt-6 text-center text-gray-400 text-sm">
           <p>© 2025 TechAvishkar • ATMECE . All rights reserved.</p>

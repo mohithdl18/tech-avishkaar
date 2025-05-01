@@ -1,32 +1,34 @@
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import ieee_logo from "./../assets/ieee_logo.png"
+import ieee_bs from "./../assets/ieee-bs.jpg"
+import ieee_ms from "./../assets/ieee-ms.png"
+import iet_logo from "./../assets/iet-logo.png"
 
 const SponsorsSection = () => {
   // These would be actual logos in a real implementation
   const tierSponsors = {
-    platinum: [
-      { name: "TechGiant", logo: "TG" },
-      { name: "InnovateNow", logo: "IN" }
-    ],
-    gold: [
-      { name: "CloudService", logo: "CS" },
-      { name: "DevTools", logo: "DT" },
-      { name: "SecurityPlus", logo: "SP" }
-    ],
-    silver: [
-      { name: "StartupHub", logo: "SH" },
-      { name: "CodeMasters", logo: "CM" },
-      { name: "DataSys", logo: "DS" },
-      { name: "WebFuture", logo: "WF" }
-    ],
+    // platinum: [
+    //   { name: "TechGiant", logo: "TG" },
+    //   { name: "InnovateNow", logo: "IN" }
+    // ],
+    // gold: [
+    //   { name: "CloudService", logo: "CS" },
+    //   { name: "DevTools", logo: "DT" },
+    //   { name: "SecurityPlus", logo: "SP" }
+    // ],
+    // silver: [
+    //   { name: "StartupHub", logo: "SH" },
+    //   { name: "CodeMasters", logo: "CM" },
+    //   { name: "DataSys", logo: "DS" },
+    //   { name: "WebFuture", logo: "WF" }
+    // ],
     community: [
-      { name: "TechCommunity", logo: "TC" },
-      { name: "DevNetwork", logo: "DN" },
-      { name: "AI Alliance", logo: "AA" },
-      { name: "CodeCampus", logo: "CC" },
-      { name: "HackersUnion", logo: "HU" },
-      { name: "TechEdu", logo: "TE" }
+      { name: "TechCommunity", logo: ieee_logo },
+      { name: "DevNetwork", logo: ieee_bs },
+      { name: "AI Alliance", logo: ieee_ms },
+      { name: "CodeCampus", logo: iet_logo }
     ]
   };
 
@@ -41,7 +43,7 @@ const SponsorsSection = () => {
         </div>
 
         {/* Platinum Sponsors */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <h3 className="text-xl font-bold mb-6 text-center">Platinum Sponsors</h3>
           <div className="flex flex-wrap justify-center gap-8">
             {tierSponsors.platinum.map((sponsor, index) => (
@@ -50,10 +52,10 @@ const SponsorsSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Gold Sponsors */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <h3 className="text-xl font-bold mb-6 text-center">Gold Sponsors</h3>
           <div className="flex flex-wrap justify-center gap-6">
             {tierSponsors.gold.map((sponsor, index) => (
@@ -62,10 +64,10 @@ const SponsorsSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Silver Sponsors */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <h3 className="text-xl font-bold mb-6 text-center">Silver Sponsors</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {tierSponsors.silver.map((sponsor, index) => (
@@ -74,15 +76,15 @@ const SponsorsSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Community Partners */}
         <div className="mb-16">
           <h3 className="text-xl font-bold mb-6 text-center">Community Partners</h3>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-12">
             {tierSponsors.community.map((sponsor, index) => (
-              <div key={index} className="w-28 h-16 bg-gray-50 rounded-lg flex items-center justify-center">
-                <div className="text-xl font-bold text-gray-400">{sponsor.logo}</div>
+              <div key={index} className="w-28 h-28  rounded-lg flex items-center justify-center">
+                <img src={sponsor.logo} alt={sponsor.name} className="h-28 object-contain" />
               </div>
             ))}
           </div>

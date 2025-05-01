@@ -37,9 +37,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center">
+            <a href="#" className="flex items-center">
               <Logo />
-            </Link>
+            </a>
           </div>
 
           {/* Desktop menu */}
@@ -128,7 +128,7 @@ const Navbar = () => {
               asChild
               className="w-full mt-4 gradient-bg"
             >
-              <a href="#register">Register Now</a>
+              <a href="https://tally.so/r/3ygjYd">Register Now</a>
             </Button>
           </div>
         </div>

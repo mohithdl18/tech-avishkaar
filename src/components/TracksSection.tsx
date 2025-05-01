@@ -29,20 +29,16 @@ const TracksSection = () => {
       color: "from-violet-500 to-purple-600",
       problemStatements: [
         {
-          title: "Climate Analytics & Forecasting",
-          description: "Build solutions using high-resolution weather models, carbon footprint estimation, and anomaly detection to analyze and predict climate patterns effectively."
-        },
-        {
           title: "Smart Healthcare & Wellbeing",
-          description: "Develop solutions like early diagnostics, personalized treatment models, and mental health chatbots to enhance patient care and overall wellbeing."
+          description: "Leveraging AI and ML to deliver predictive, personalized healthcare and promote holistic wellbeing through smart diagnostics and real-time monitoring."
         },
         {
           title: "Cultural Apps & Gamification",
-          description: "Create engaging experiences through desi game recommendations and adaptive AR/VR storytelling that preserve and promote cultural heritage."
+          description: "Using AI and ML to personalize cultural content, enable intelligent storytelling, and gamify heritage learning for deeper, engaging experiences."
         },
         {
-          title: "Digital Inclusion & Financial Wellness",
-          description: "Create solutions like AI-based micro-credit scoring, budgeting robo-advisors, and fraud detection bots to enhance financial access and security for underserved communities."
+          title: "Public Safety & Civic Engagement",
+          description: "Applying AI and ML to enhance threat detection, streamline emergency response, and enable data-driven civic participation and decision-making."
         }
       ]
     },
@@ -54,12 +50,16 @@ const TracksSection = () => {
       color: "from-blue-500 to-cyan-600",
       problemStatements: [
         {
-          title: "Air Quality & Geo-Hazard Monitoring",
-          description: "Develop a smart system that monitors air pollution and detects geo-hazards like landslides or earthquakes using real-time sensor data. The system should enable early warnings and support disaster risk management."
+          title: "Renewable Energy Management",
+          description: "Harnessing IoT for real-time monitoring, optimization, and intelligent distribution of renewable energy sources to ensure sustainable power systems."
         },
         {
-          title: "Circular Economy & Waste Management",
-          description: "Design a solution that promotes recycling, reduces waste, and supports sustainable resource use through smart tracking, sorting, and reuse technologies."
+          title: "Assistive Tech & Accessibility",
+          description: "Utilizing IoT-enabled devices to enhance independence and accessibility for people with disabilities and old age through smart environments and adaptive interfaces."
+        },
+        {
+          title: "Smart Cities & Urban Mobility",
+          description: "Integrating IoT to optimize urban infrastructure, manage traffic flow, and enable seamless, data-driven mobility in connected smart cities."
         }
       ]
     },
@@ -71,12 +71,12 @@ const TracksSection = () => {
       color: "from-green-500 to-emerald-600",
       problemStatements: [
         {
-          title: "Renewable Energy Optimizer",
-          description: "Create a solution that helps homeowners and businesses optimize their renewable energy usage based on weather predictions, energy prices, and consumption patterns to reduce costs and carbon footprint."
+          title: "AI & ML",
+          description: "Pick a food product (like Frooti or Maaza). Scan it for its nutritional values. After scanning, compare it with other food products in its category (juices) and suggest a healthier choice. (Select parameters like sugar content, vitamins, preservatives, freshness & shelf life, and more as needed)."
         },
         {
-          title: "Waste Reduction Platform",
-          description: "Design an application that connects businesses with excess food, materials, or products to organizations or individuals who can use them, reducing waste while creating economic and social value."
+          title: "Cyber Security",
+          description: "Build a chatbot that can be integrated with your antivirus server, patch management server, and domain server. With the chat commands, it should be able to update antivirus and patches in the end-user system."
         }
       ]
     },

@@ -73,7 +73,7 @@ const HeroSection = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="gradient-bg text-lg py-6 px-8" asChild>
-              <a href="#register">Register Now</a>
+              <a href="https://tally.so/r/3ygjYd">Register Now</a>
             </Button>
             <Button variant="outline" className="text-lg py-6 px-8 border-2 text-[#150029] hover:bg-accent/5" asChild>
               <a href="#about">Learn More</a>
