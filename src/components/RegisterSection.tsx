@@ -35,14 +35,14 @@ const RegisterSection = () => {
                       <div className="mr-3 mt-1 w-5 h-5 rounded-full gradient-bg flex items-center justify-center text-white">✓</div>
                       <div>
                         <span className="font-medium text-[#150029]">Learn New Skills</span>
-                        <p className="text-gray-600 text-sm">Attend workshops led by industry experts</p>
+                        <p className="text-gray-600 text-sm">Mentorship led by industry experts</p>
                       </div>
                     </li>
                     <li className="flex items-start">
                       <div className="mr-3 mt-1 w-5 h-5 rounded-full gradient-bg flex items-center justify-center text-white">✓</div>
                       <div>
                         <span className="font-medium text-[#150029]">Win Amazing Prizes</span>
-                        <p className="text-gray-600 text-sm">Over $50,000 in prizes and opportunities</p>
+                        <p className="text-gray-600 text-sm">Over ₹30,000+ in prizes and opportunities</p>
                       </div>
                     </li>
                     <li className="flex items-start">
