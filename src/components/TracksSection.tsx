@@ -10,6 +10,7 @@ import {
   DialogTitle,
   DialogClose,
 } from "@/components/ui/dialog";
+import { title } from "process";
 
 const TracksSection = () => {
   const [activeTrackId, setActiveTrackId] = useState<number | null>(null);
@@ -88,12 +89,7 @@ const TracksSection = () => {
       color: "from-amber-500 to-orange-600",
       problemStatements: [
         {
-          title: "Digital Inclusion Platform",
-          description: "Build a solution that bridges the digital divide by making technology more accessible to underserved populations, addressing barriers such as connectivity, device access, or digital literacy."
-        },
-        {
-          title: "Educational Resource Equalizer",
-          description: "Create a platform that democratizes access to quality educational resources regardless of geographic or economic limitations, potentially using peer-to-peer connections or alternative distribution methods."
+          title: "No problem statements will be given, participants have to come up with their own ideas."
         }
       ]
     }

@@ -8,7 +8,7 @@ const Logo: React.FC = () => {
         <img src={logo} alt="Logo" className="w-full h-full object-cover rounded-full" />
       </div>
       <span className="font-bold text-2xl text-[#150029]">
-        Tech<span className="gradient-text">Avishkaar</span>
+        Tech<span className="gradient-text">Avishkar</span>
       </span>
     </div>
   );
